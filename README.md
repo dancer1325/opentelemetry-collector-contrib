@@ -41,23 +41,36 @@
 
 # OpenTelemetry Collector Contrib
 
-This is a repository for OpenTelemetry Collector components that are not suitable for the  [core repository](https://github.com/open-telemetry/opentelemetry-collector) of the collector. 
+* OpenTelemetry Collector Contrib
+  * == OpenTelemetry Collector components / ❌NOT suitable for the [Collector's core repository](https://github.com/open-telemetry/opentelemetry-collector)❌  
+    * stability levels / EACH telemetry data
 
-The official distributions, core and contrib, are available as part of the [opentelemetry-collector-releases](https://github.com/open-telemetry/opentelemetry-collector-releases) repository. Some of the components in this repository are part of the "core" distribution, such as the Jaeger and Prometheus components, but most of the components here are only available as part of the "contrib" distribution. Users of the OpenTelemetry Collector are also encouraged to build their own custom distributions with the [OpenTelemetry Collector Builder](https://github.com/open-telemetry/opentelemetry-collector/tree/main/cmd/builder), using the components they need from the core repository, the contrib repository, and possibly third-party or internal repositories.
+* OpenTelemetry Collector official distributions
+  * == 👀OpenTelemetry Collector Core + OpenTelemetry Collector Contrib👀
+  * == part of the [opentelemetry-collector-releases](https://github.com/open-telemetry/opentelemetry-collector-releases)
 
-Each component has its own support levels, as defined in the following sections. For each signal that a component supports, there's a stability level, setting the right expectations. It is possible then that a component will be **Stable** for traces but **Alpha** for metrics and **Development** for logs.
+* way to build OpenTelemetry Collector's custom distributions 
+  * -- via -- [OpenTelemetry Collector Builder](https://github.com/open-telemetry/opentelemetry-collector/tree/main/cmd/builder)
 
 ## Stability levels
 
-Stability level for components in this repository follow the [definitions](https://github.com/open-telemetry/opentelemetry-collector#stability-levels) from the OpenTelemetry Collector repository.
+* [definitions](https://github.com/open-telemetry/opentelemetry-collector#stability-levels)
 
 ## Gated features
 
-Some features are hidden behind feature gates before they are part of the main code path for the component. Note that the feature gates themselves might be at different [lifecycle stages](https://github.com/open-telemetry/opentelemetry-collector/tree/main/featuregate#feature-lifecycle).
+* allows
+  * hide some features
+    * == ❌NOT part DIRECTLY of main code❌
+* [lifecycle stages / EACH feature gate](https://github.com/open-telemetry/opentelemetry-collector/tree/main/featuregate#feature-lifecycle)
+
+## Documentation
+* [here](docs)
+* [examples](examples)
 
 ## Support
 
-Each component is supported either by the community of OpenTelemetry Collector Contrib maintainers, as defined by the GitHub group [@open-telemetry/collector-contrib-maintainer](https://github.com/orgs/open-telemetry/teams/collector-contrib-maintainer), or by specific vendors. See the individual README files for information about the specific components.
+* TODO: Each component is supported either by the community of OpenTelemetry Collector Contrib maintainers, as defined by the GitHub group [@open-telemetry/collector-contrib-maintainer](https://github.com/orgs/open-telemetry/teams/collector-contrib-maintainer), or by specific vendors
+See the individual README files for information about the specific components.
 
 The OpenTelemetry Collector Contrib maintainers may at any time downgrade specific components if they are deemed unmaintained or if they pose a risk to the repository and/or binary distribution.
 
@@ -115,33 +128,6 @@ For more information about the approver role, see the [community repository](htt
 - Actively seeking contributors to triage issues
 
 For more information about the triager role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#triager).
-
-### Emeritus Maintainers
-
-- [Daniel Jaglowski](https://github.com/djaglowski)
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling)
-- [Tigran Najaryan](https://github.com/tigrannajaryan)
-
-For more information about the emeritus role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#emeritus-maintainerapprovertriager).
-
-### Emeritus Approvers
-
-- [Anthony Mirabella](https://github.com/Aneurysm9)
-- [Bryan Aguilar](https://github.com/bryan-aguilar)
-- [Przemek Maciolek](https://github.com/pmm-sumo)
-- [Ruslan Kovalov](https://github.com/kovrus)
-
-For more information about the emeritus role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#emeritus-maintainerapprovertriager).
-
-### Emeritus Triagers
-
-- [Alolita Sharma](https://github.com/alolita)
-- [Gabriel Aszalos](https://github.com/gbbr)
-- [Goutham Veeramachaneni](https://github.com/gouthamve)
-- [Punya Biswal](https://github.com/punya)
-- [Steve Flanders](https://github.com/flands)
-
-For more information about the emeritus role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#emeritus-maintainerapprovertriager).
 
 ### No Over-Representation
 
